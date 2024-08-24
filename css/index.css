@@ -58,12 +58,12 @@ header a:hover {
 
 footer {
     background-color: #0e131b;
-    background: linear-gradient(315deg, rgba(13,17,23,1) 0%, rgba(13,17,23,1) 55%, rgba(13,17,23,0.8083566190147934) 100%);
+    background: linear-gradient(70deg, rgba(13,17,23,1) 0%, rgba(13,17,23,1) 55%, rgba(13,17,23,0.8083566190147934) 100%);
     color: white;
     font-weight: bold;
     text-align: center;
-    width: 100%;
     position: relative;
+    width: 100%;
     bottom: 0;
     margin-top: 2rem;
     padding: 2rem 0;
@@ -87,7 +87,8 @@ footer {
     height: 25rem;
 }
 /* content block */
-.center {
+.content {
+    align-items: center;
     text-align: center;
 }
 
@@ -136,4 +137,12 @@ footer {
     margin: 2rem auto;
     padding: 0 1rem;
     height: 64px;
+}
+
+#app-right p {
+    float: left;
+}
+
+#app-left img {
+    float: right;
 }
