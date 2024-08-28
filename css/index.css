@@ -87,11 +87,16 @@ footer {
 }
 
 .apps-header p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .apps-header img {
     height: 300px;
+}
+
+#credit-img {
+    font-size: 0.9rem;
+    color: rgb(48, 48, 48);
 }
 
 /* Projects */
