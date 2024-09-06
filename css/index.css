@@ -63,6 +63,7 @@ footer {
     justify-content: center;
     display: flex;
     max-width: 100%;
+    overflow: hidden;
 }
 
 /* header main */
@@ -129,4 +130,74 @@ footer {
 
 .contact {
     margin: 4rem auto;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.5s ease 0.2s;
+}
+
+/* ******************** */
+
+.carousel {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.carousel-inner {
+    width: auto;
+    display: inline-block;
+    animation: 10s runSlide infinite linear;
+}
+
+.carousel:hover .carousel-inner {
+    animation-play-state: paused;
+}
+
+.carousel:before,
+.carousel:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 10;
+}
+
+.carousel:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0), white);
+}
+
+.carousel:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0), white);
+}
+
+.item {
+    padding: 1rem 2rem;
+    display: inline;
+}
+
+.item svg {
+    height: 100px;
+    width: 100px;
+}
+
+/* animation slide */
+@keyframes runSlide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
