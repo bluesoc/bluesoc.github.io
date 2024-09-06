@@ -179,24 +179,6 @@ footer {
     color: rgb(48, 48, 48);
 }
 
-/* Projects */
-.projects {
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
-.projects p {
-    margin-top: 1rem;
-}
-
-.projects img {
-    height: 64px;
-}
-
-.projects .col-sm {
-    padding: 1rem;
-}
-
 .stack {
     margin: 2rem auto;
 }
