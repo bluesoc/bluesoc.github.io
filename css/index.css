@@ -1,3 +1,4 @@
+/* Projects Cardboard */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -6,7 +7,7 @@
     justify-items: center;
     align-items: center;
 
-    margin: 2rem 0;
+    margin: 4rem auto;
 }
 
 .projects-container a {
@@ -20,18 +21,27 @@
     }
 }
 
+@media (min-width: 1000px) {
+    .projects-container {
+        max-width: 80%;
+    }
+}
+
 .project-window {
     width: 18rem;
     height: 22rem;
-
     border-radius: 14%;
-    border: 0.5px solid var(--heading-color);
+    background: white;
+}
+
+.project-window:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
 }
 
 .project-img {
     overflow: hidden;
-
-    object-fit: contain;    
+    object-fit: contain;
 
     height: 50%;
     width: 100%;
@@ -41,7 +51,11 @@
 
 .project-img img {
     max-width: 100%;
+    object-fit:contain;
+    /*
+    object-position: center;
     max-height: 100%;
+    */
 }
 
 .project-text {
@@ -58,13 +72,14 @@
     font-weight: bold;
 }
 
-
 /* *************** */
 
 :root {
     --primary-color: #0d1117;
     --secondary-color: #14223a;
     --heading-color: #212529;
+    --bg-color: #fff5f5;
+    --slide-direction: -100%;
 }
 
 * {
@@ -75,6 +90,7 @@
 
 body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background: var(--bg-color);
 }
 
 h1 {
@@ -100,7 +116,7 @@ header {
 header img {
     height: 4rem;
     border-radius: 100%;
-    border: 2px solid rgba(0, 255, 0, 0.693);
+    border: 2px solid rgb(0, 190, 0);
 }
 
 header img:hover {
@@ -143,6 +159,8 @@ footer {
     display: flex;
     max-width: 100%;
     overflow: hidden;
+
+    margin-top: -3rem;
 }
 
 /* header main */
@@ -163,7 +181,7 @@ footer {
 }
 
 .apps-header {
-    margin: 2rem auto;
+    margin: 2rem auto 4rem;
 }
 
 .apps-header p {
@@ -182,11 +200,15 @@ footer {
 }
 
 .stack {
-    margin: 2rem auto;
+    margin: 5rem auto;
+}
+
+.stack h1 {
+    margin: 1rem auto 4rem;
 }
 
 .contact {
-    margin: 4rem auto;
+    margin: 4rem auto 8rem;
 }
 
 .contact a {
@@ -231,12 +253,12 @@ footer {
 
 .carousel:before {
     left: 0;
-    background: linear-gradient(to left, rgba(0,0,0,0), white);
+    background: linear-gradient(to left, rgba(0,0,0,0), var(--bg-color));
 }
 
 .carousel:after {
     right: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0), white);
+    background: linear-gradient(to right, rgba(0,0,0,0), var(--bg-color));
 }
 
 .item {
@@ -255,6 +277,14 @@ footer {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(var(--slide-direction));
     }
+}
+
+/* carousel-2 */
+.carousel-inner-2 {
+    width: auto;
+    display: inline-block;
+    --slide-direction: 100%;
+    animation: 10s runSlide infinite linear;
 }
