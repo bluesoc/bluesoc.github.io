@@ -32,19 +32,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
-    .project-window {
-        margin-top: 1rem;
-    }
-}
-
-@media (min-width: 1000px) {
-    .projects-container,
-    .carousel {
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 @media (min-width: 1000px) {
@@ -309,6 +296,7 @@ footer {
 
 /* carousel-2 */
 .carousel-inner-2 {
+    --slide-direction: -100%;
     --slide-direction: -100%;
     animation: 10s runSlide infinite linear;
 }
