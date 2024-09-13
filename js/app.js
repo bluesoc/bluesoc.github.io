@@ -24,49 +24,31 @@ function SlideUp(obj, duration) {
         translateY: [80, 0],
         duration: duration,
         opacity: [0, 1],
-        ease: "easeInQuad"
+        ease: "linear"
     });
 }
 
-// Fade Main Title
-FadeIn("#head-intro", 2000);
+SlideUp(".intro-page", 4000);
 
-// Slide Up Effect
-SlideUp("#head-img", 4000);
+FadeIn("header", 1000);
 
-effectX("#app-left", 50, 1600);
-effectX("#app-right", -50, 1600);
+// Fade carousel
+// FadeIn('.carousel', 3000);
 
 SlideUp(".stack", 2000);
 
-// Fade carousel
-FadeIn('.carousel', 3000);
-
-// Carousel Handling
 (function() {
-    // loops: how many times the carousel will be duplicated
-    const CAROUSEL_LOOPS = 5;
+    const contact = document.querySelector(".profile-buttons").cloneNode(true);
+    document.querySelector("#contact-btn").appendChild(contact);
 
-    const carouselTop = document.querySelector(".carousel");
-    const carouselBottom = document.querySelector(".carousel-2")
+    // loops: how many times the carousel will be duplicated
+    const CAROUSEL_LOOPS = 2;
 
     const carouselTopInner = document.querySelector('.carousel-inner');
-    const carouselBottomInner = document.querySelector('.carousel-inner-2');
+    const carouselTop = document.querySelector(".carousel");
 
-    // Duplicate top carousel
     for (let i = 0; i < CAROUSEL_LOOPS; i++) {
         const clone = carouselTopInner.cloneNode(true);
         carouselTop.appendChild(clone);
-    }
-
-    // Append bottom carousel with top carousel
-    while (carouselTopInner.lastChild) {
-        carouselBottomInner.appendChild(carouselTopInner.lastChild);
-    }
-
-    // Duplicate bottom carousel
-    for (let i = 0; i < 3; i++) {
-        const reclone = carouselBottomInner.cloneNode(true);
-        carouselBottom.appendChild(reclone);
     }
 }) ();

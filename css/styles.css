@@ -1,0 +1,211 @@
+/* Content Block */
+.content {
+    text-align: center;
+}
+
+/* New UI */
+.intro-page {
+    height: 95vh;
+    margin-top: 1rem;
+}
+
+.intro-profile-pic img {
+    border-radius: 100%;
+    max-height: 20rem;
+}
+
+.profile-text {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.profile-text h2, h3 {
+    color: darkslategray;
+}
+
+.profile-buttons {
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.profile-buttons svg {
+    max-height: 2rem;
+    max-width: 2rem;
+    margin: 1rem;
+}
+
+.profile-buttons svg:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+}
+
+#t-grad {
+    background: linear-gradient(to right, blue, red);
+    background-clip: text;
+    color: transparent;
+}
+
+.t-bolder {
+    font-size: 4.5rem;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.b-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.b-box {
+    margin: 1rem 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
+
+/* Dev Branch */
+.experience {
+    height: 60vh;
+}
+
+.experience li {
+    margin: 1rem 0.5rem;
+}
+/* end New UI */
+
+/* Projects Cardboard */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    margin: 4rem auto;
+}
+
+.projects-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-window {
+    width: 18rem;
+    height: 22rem;
+    border-radius: 14%;
+    background: white;
+}
+
+.project-window:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+}
+
+.project-img {
+    overflow: hidden;
+    object-fit: contain;
+    height: 50%;
+    width: 100%;
+    border-radius: 15% 15% 0 0;
+}
+
+.project-img img {
+    max-width: 100%;
+    object-fit: contain;
+    /*
+    object-position: center;
+    max-height: 100%;
+    */
+}
+
+.project-text {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 90%;
+}
+
+.project-title {
+    font-weight: bold;
+}
+/* *************** */
+
+#credit-img {
+    font-size: 0.9rem;
+    color: rgb(48, 48, 48);
+}
+
+.stack {
+    margin-top: 5rem;
+}
+
+.stack h1 {
+    margin: 1rem auto 4rem;
+}
+/*
+.contact {
+    margin: 4rem auto 8rem;
+}
+*/
+.contact a {
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.5s ease 0.2s;
+}
+
+.contact h4 {
+    margin-top: 1rem;
+}
+
+/* Carousel Section */
+.carousel {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.carousel-inner {
+    width: auto;
+    display: inline-block;
+    animation: 15s runSlide infinite linear;
+}
+
+.carousel:before,
+.carousel:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 10;
+}
+
+.carousel:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0), var(--bg-color));
+}
+
+.carousel:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0), var(--bg-color));
+}
+
+/* Carousel Icon */
+.item {
+    padding: 1rem;
+    display: inline;
+}
+
+.item svg {
+    height: 80px;
+    width: 80px;
+}
+/* *** */
