@@ -1,3 +1,33 @@
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.parallax-mt {
+    height: 100vh;
+    background-image: url("/img/mountain.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Content Block */
 .content {
     text-align: center;
@@ -5,8 +35,8 @@
 
 /* New UI */
 .intro-page {
-    height: 95vh;
-    margin-top: 1rem;
+    height: 90vh;
+    margin-top: .5rem;
 }
 
 .intro-profile-pic img {
@@ -20,7 +50,7 @@
 }
 
 .profile-text h2, h3 {
-    color: darkslategray;
+    color: #2f4f4f;
 }
 
 .profile-buttons {
@@ -39,18 +69,6 @@
     -10px -10px 10px white;
 }
 
-#t-grad {
-    background: linear-gradient(to right, blue, red);
-    background-clip: text;
-    color: transparent;
-}
-
-.t-bolder {
-    font-size: 4.5rem;
-    font-weight: 900;
-    font-family: monospace;
-}
-
 .b-container {
     display: flex;
     align-items: center;
@@ -58,22 +76,11 @@
     overflow: hidden;
 }
 
-.b-box {
-    margin: 1rem 0.5rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 1rem 2rem;
-}
-
-/* Dev Branch */
-.experience {
-    height: 60vh;
-}
-
-.experience li {
-    margin: 1rem 0.5rem;
-}
 /* end New UI */
+
+#projects {
+    height: 100%;
+}
 
 /* Projects Cardboard */
 .projects-container {
@@ -95,6 +102,8 @@
     height: 22rem;
     border-radius: 14%;
     background: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .project-window:hover {
@@ -113,10 +122,6 @@
 .project-img img {
     max-width: 100%;
     object-fit: contain;
-    /*
-    object-position: center;
-    max-height: 100%;
-    */
 }
 
 .project-text {
@@ -130,25 +135,16 @@
 .project-title {
     font-weight: bold;
 }
-/* *************** */
-
-#credit-img {
-    font-size: 0.9rem;
-    color: rgb(48, 48, 48);
-}
+/* *** */
 
 .stack {
     margin-top: 5rem;
 }
 
 .stack h1 {
-    margin: 1rem auto 4rem;
+    margin: 0rem auto 4rem;
 }
-/*
-.contact {
-    margin: 4rem auto 8rem;
-}
-*/
+
 .contact a {
     text-decoration: none;
 }
@@ -207,5 +203,7 @@
 .item svg {
     height: 80px;
     width: 80px;
+
+    height: 60px;
+    width: 60px;
 }
-/* *** */

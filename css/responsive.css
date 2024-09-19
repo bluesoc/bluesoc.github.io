@@ -23,22 +23,12 @@
     .projects-container {
         grid-template-columns: 1fr;
     }
-
-    .project-window {
-        margin-top: 1rem;
-    }
 }
 
 @media (min-width: 1000px) {
-    .projects-container,
     .carousel {
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-
-    .projects-container {
-        max-width: 50%;
-    }
-
 }

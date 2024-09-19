@@ -1,0 +1,26 @@
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin: 0 .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 1rem;
+    max-width: 680px;
+}
+
+.project-window:hover {
+    box-shadow: none;
+}
+
+.project-img {
+    object-position: center;
+    width: 100%;
+    max-height: 20rem;
+}
