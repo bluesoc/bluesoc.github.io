@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/works.css">
     <script src="js/anime.min.js"></script>
     <title>Renan's Portfolio</title>
 </head>
@@ -17,7 +18,7 @@
             <a href="/">Home</a>
         </nav>
         <nav>
-            <a href="#projects" id="projects-id">Projects</a>
+            <a href="#works" id="projects-id">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -46,7 +47,63 @@
             </div>
         </section>
 
-        <section class="parallax-mt"></section>
+        <!--
+            <section class="parallax-mt"></section>
+        -->
+
+        <section id="works">
+            <div class="work-div">
+                <div>
+                    <img class="social-img" src="img/tronstore.png" />
+                </div>
+                <div class="social-text">
+                    <h3>Tron Online Store</h3>
+                    <p>An innovative e-commerce platform offering a wide range of products. Sign up now to bring your business online!</p>
+                    <p>Stack: React | Typescript | Tailwind | Express.js</p>
+                    <a href="https://tron-store.vercel.app">Direct Link</a>
+                </div>
+            </div>
+
+            <div class="work-div">
+                <div>
+                    <img class="social-img" src="img/tronicengine.png" />
+                </div>
+                <div class="social-text">
+                    <h3>Tronic Engine</h3>
+                    <p>We manufacture a wide range of components and equipment designed for optimal performance. Our focus on quality and innovation positions us as a trusted partner in the engineering sector.</p>
+                    <p>Stack: Wordpress | Javascript | MySQL</p>
+                </div>
+            </div>
+
+            <div class="work-div">
+                <div>
+                    <img class="social-img" src="img/simapi.png" />
+                </div>
+                <div class="social-text">
+                    <h3>Inventory Management API</h3>
+                    <p>Simplify your inventory management by enabling your business to maintain accurate stock levels and reduce excess inventory.</p>
+                    <p>Stack: Python | Django | Vue.js | Javascript</p>
+                    <a href="https://github.com/bluesoc/Supermarket-Inventory-Management-API">Source Code</a>
+                </div>
+            </div>
+
+            <div class="work-div">
+                <div>
+                    <img class="social-img" src="img/backend.png" />
+                </div>
+                <div class="social-text">
+                    <h3>Authentication Backend</h3>
+                    <p>Utilize frameworks to effectively manage web tokens, ensuring reliable user identity management and access control.</p>
+                    <p>Stack: Flask | Python | React | Tailwind</p>
+                    <p>
+                        <a href="https://github.com/bluesoc/DjangoJWTAuth">API Source Code</a>
+                    </p>
+                    <p>
+                        <a href="https://renandev.hashnode.dev/django-and-jwt-how-to-set-up-a-secure-authentication-system">My Article about JWT Tokens</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <section id="projects" class="hidden">
 
@@ -60,6 +117,7 @@
                             <!-- Photo from Pexels -->
                             <img loading="lazy" src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image">
                         </div>
+                        
                         <div class="project-text">
                             <div class="project-title">
                                 <p>A Token Authentication API</p>
