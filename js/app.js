@@ -22,9 +22,6 @@ function SlideUp(obj, duration) {
 SlideUp(".intro-page", 4000);
 
 (function() {
-    const contact = document.querySelector(".profile-buttons").cloneNode(true);
-    document.querySelector("#contact-btn").appendChild(contact);
-
     // How many times the carousel will be duplicated
     const CAROUSEL_LOOPS = 2;
 
