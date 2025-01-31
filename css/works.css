@@ -18,7 +18,10 @@
     margin: auto;
     max-width: 30rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 864px) {
+    #works {
+        margin-top: 12rem;
+    }
     .work-div {
         flex-direction: column;
     }
@@ -26,6 +29,9 @@
         padding-top: 2rem;
     }
     .social-img {
-        max-width: 24rem;
+        max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow: hidden;
     }
 }
