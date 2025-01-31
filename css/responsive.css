@@ -7,24 +7,15 @@
         transform: translateX(var(--slide-direction));
     }
 }
-
 /* Media Viewports */
 @media (max-width: 700px) {
     .b-container {
         display: inline-block;
     }
-
     .profile-text {
         margin-top: 2rem;
     }
 }
-
-@media (max-width: 640px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 @media (min-width: 1000px) {
     .carousel {
         max-width: 80%;

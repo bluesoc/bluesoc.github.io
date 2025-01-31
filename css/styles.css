@@ -3,179 +3,79 @@
     filter: blur(3px);
     transition: all 1s;
 }
-
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
-
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
 }
-
-.parallax-mt {
-    height: 100vh;
-    background-image: url("/img/mountain.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Content Block */
 .content {
     text-align: center;
 }
-
-/* New UI */
 .intro-page {
     height: 90vh;
     margin-top: .5rem;
 }
-
 .intro-profile-pic img {
     border-radius: 100%;
     max-height: 20rem;
 }
-
 .profile-text {
     padding: 0 2rem;
     text-align: center;
 }
-
 .profile-text h2, h3 {
     color: #2f4f4f;
 }
-
 .profile-buttons {
     display: inline-flex;
     white-space: nowrap;
 }
-
 .profile-buttons svg {
     max-height: 2rem;
     max-width: 2rem;
     margin: 1rem;
 }
-
 .profile-buttons svg:hover {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
-    -10px -10px 10px white;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
 }
-
 .b-container {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
-
-/* end New UI */
-
-#projects {
-    height: 100%;
-}
-
-/* Projects Cardboard */
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    margin: 4rem auto;
-}
-
-.projects-container a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.project-window {
-    width: 18rem;
-    height: 22rem;
-    border-radius: 14%;
-    background: white;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.project-window:hover {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
-    -10px -10px 10px white;
-}
-
-.project-img {
-    overflow: hidden;
-    object-fit: contain;
-    height: 50%;
-    width: 100%;
-    border-radius: 15% 15% 0 0;
-}
-
-.project-img img {
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.project-text {
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height: 90%;
-}
-
-.project-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-/* *** */
-
 .stack {
     margin-top: 5rem;
 }
-
 .stack h1 {
-    margin: 0rem auto 4rem;
+    margin: 0 auto 4rem;
 }
-
 .contact a {
     text-decoration: none;
 }
-
 .contact a:hover {
     text-decoration: underline;
     transition: text-decoration 0.5s ease 0.2s;
 }
-
 .contact h4 {
     margin-top: 1rem;
 }
-
-/* Carousel Section */
 .carousel {
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding: 1rem 0 5rem;
     overflow: hidden;
     position: relative;
     white-space: nowrap;
 }
-
 .carousel-inner {
-    width: auto;
     display: inline-block;
     animation: 15s runSlide infinite linear;
 }
-
 .carousel:before,
 .carousel:after {
     position: absolute;
@@ -185,27 +85,19 @@
     content: "";
     z-index: 10;
 }
-
 .carousel:before {
     left: 0;
     background: linear-gradient(to left, rgba(0,0,0,0), var(--bg-color));
 }
-
 .carousel:after {
     right: 0;
     background: linear-gradient(to right, rgba(0,0,0,0), var(--bg-color));
 }
-
-/* Carousel Icon */
 .item {
     padding: 1rem;
     display: inline;
 }
-
 .item svg {
-    height: 80px;
-    width: 80px;
-
     height: 60px;
     width: 60px;
 }
