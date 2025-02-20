@@ -70,11 +70,14 @@
     padding: 1rem 0 5rem;
     overflow: hidden;
     position: relative;
-    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .carousel-inner {
-    display: inline-block;
-    animation: 15s runSlide infinite linear;
+    display: flex;
+    animation: 12s runSlide infinite linear;
+    flex-wrap: nowrap;
+    min-width: 58rem;
 }
 .carousel:before,
 .carousel:after {
@@ -95,7 +98,7 @@
 }
 .item {
     padding: 1rem;
-    display: inline;
+    flex: 0 0 auto;
 }
 .item svg {
     height: 60px;

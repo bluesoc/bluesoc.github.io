@@ -23,7 +23,7 @@ SlideUp(".intro-page", 2000);
 
 (function() {
     // How many times the carousel will be duplicated
-    const CAROUSEL_LOOPS = 2;
+    const CAROUSEL_LOOPS = 3;
 
     const carouselTopInner = document.querySelector('.carousel-inner');
     const carouselTop = document.querySelector(".carousel");
