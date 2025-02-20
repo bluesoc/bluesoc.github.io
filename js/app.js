@@ -19,7 +19,7 @@ function SlideUp(obj, duration) {
     });
 }
 
-SlideUp(".intro-page", 4000);
+SlideUp(".intro-page", 2000);
 
 (function() {
     // How many times the carousel will be duplicated
