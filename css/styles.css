@@ -41,6 +41,7 @@
     margin: 1rem;
 }
 .profile-buttons svg:hover {
+    border-radius: 50%;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
 }
 .b-container {
